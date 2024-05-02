@@ -1,0 +1,11 @@
+training:
+  base_config:
+    pretrained_model: VietAI/vit5-base
+    data_path: data/vietac_train_v1.0.4.csv
+    save_path: models/
+  parameters:
+    num_epochs: 3
+    learning_rate: 1e-5
+    batchsize: 16
+    weight_decay: 0.01
+    limit_save: 3
